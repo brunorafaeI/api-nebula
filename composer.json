@@ -26,7 +26,11 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Common\\": "src/Common/",
+            "Domain\\": "src/Domain/",
+            "Infrastructure\\": "src/Infrastructure/",
+            "Presentation\\": "src/Presentation/"
         }
     },
     "autoload-dev": {
@@ -49,7 +53,6 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
@@ -59,6 +62,9 @@
         "symfony/symfony": "*"
     },
     "extra": {
+        "runtime": {
+            "project_dir": "src/Infrastructure/Frameworks/Symfony"
+        },
         "symfony": {
             "allow-contrib": false,
             "require": "6.3.*",
