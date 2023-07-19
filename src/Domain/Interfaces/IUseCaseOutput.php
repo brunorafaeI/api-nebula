@@ -2,7 +2,7 @@
 
 namespace Domain\Interfaces;
 
-class IUseCaseOutput
+interface IUseCaseOutput
 {
 
 }
